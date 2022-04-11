@@ -90,8 +90,6 @@ namespace WindowAndVersion
                 // Получает или устанавливает текущий OpenTK.Windowing.Common.Input.WindowIcon для этого окна.
                 // Это ничего не делает в macOS; на этой платформе значок определяется пакетом приложений.
                 Icon = CreateWindowIcon("helmet.png"),
-
-                NumberOfSamples = 0
             };
 
             using (Window game = new Window(nativeWindowSettings))
