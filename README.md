@@ -19,6 +19,10 @@ OpenTK tutorials
 Ссылки на источники использованной литературы
 -------------
 
+* [LearnOpenTK](https://opentk.net/learn/index.html)
+* [learnOpenGL](https://learnopengl.com/)
+
+
 [LearnOpenTK]: https://opentk.net/learn/index.html
 [Discord]: https://discord.gg/6HqD48s
 [learnOpenGL]: https://learnopengl.com/
