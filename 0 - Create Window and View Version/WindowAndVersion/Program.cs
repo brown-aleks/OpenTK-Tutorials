@@ -94,6 +94,7 @@ namespace WindowAndVersion
 
             using (Window game = new Window(nativeWindowSettings))
             {
+                // Запуск бесконечного игрового цикла.
                 game.Run();
             }
         }
@@ -101,16 +102,23 @@ namespace WindowAndVersion
 
     public class Window : GameWindow
     {
-        public Window(NativeWindowSettings nativeWindowSettings)
-    : base(GameWindowSettings.Default, nativeWindowSettings)
+        public Window(NativeWindowSettings nativeWindowSettings):base(GameWindowSettings.Default, nativeWindowSettings)
         {
             Console.WriteLine("Version:  " + GL.GetString(StringName.Version));
             Console.WriteLine("Vendor:   " + GL.GetString(StringName.Vendor));
             Console.WriteLine("Renderer: " + GL.GetString(StringName.Renderer));
             Console.WriteLine("ShadingLanguageVersion: " + GL.GetString(StringName.ShadingLanguageVersion));
             Console.WriteLine("Extensions:             " + GL.GetString(StringName.Extensions));
-
+						
+			// Получает или задает состояние VSync. VSync определяет, будет ли процес рендеринга кооличества кадров в секунду
+			// синхронизирован с количеством кадров отображаемых оборудованием.
+			// (Off) Вертикальная синхронизация отключена.
+			// (On) Вертикальная синхронизация включена.
+			// (Adaptive) VSync включен, если частота кадров не падает ниже половины целевой частоты кадров.
+			// Если целевая частота кадров не указана, это ведет себя точно так же, как OpenTK.Windowing.Common.VSyncMode.On.
             VSync = VSyncMode.On;
+						
+			// Получает или задает значение, указывающее, виден ли курсор мыши.
             CursorVisible = true;
         }
     }
