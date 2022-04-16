@@ -1,11 +1,7 @@
-﻿################################################################################
-# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
-################################################################################
+﻿#########################################################
+# Данный GITIGNORE-файл был создан собственными ручками #
+#########################################################
 
-/0 - Create Window and View Version/.vs
-/0 - Create Window and View Version/WindowAndVersion/.vs
-/0 - Create Window and View Version/WindowAndVersion/obj
-/0 - Create Window and View Version/WindowAndVersion/bin
-/0 - Create Window and View Version/CreatingWindow/.vs
-/0 - Create Window and View Version/CreatingWindow/obj
-/0 - Create Window and View Version/CreatingWindow/bin
+.vs/
+bin/
+obj/
