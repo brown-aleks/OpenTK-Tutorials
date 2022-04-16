@@ -7,7 +7,6 @@
     <Authors>Brown Aleks</Authors>
     <NeutralLanguage>ru</NeutralLanguage>
     <SignAssembly>false</SignAssembly>
-    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
