@@ -2,11 +2,14 @@
 using OpenTK.Mathematics;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 namespace _2_ElementBufferObjects
 {
-    // Простой класс, предназначенный для помощи в создании шейдеров. https://github.com/opentk/LearnOpenTK/blob/master/Common/Shader.cs
+    // Простой класс, предназначенный для помощи в создании шейдеров.
+    // https://github.com/opentk/LearnOpenTK/blob/master/Common/Shader.cs
+    // https://opentk.net/learn/chapter1/4-shaders.html
     public class Shader
     {
         public readonly int Handle;
@@ -19,6 +22,9 @@ namespace _2_ElementBufferObjects
         // Пример GLSL с комментариями можно найти в shaper.vert.
         public Shader(string vertPath, string fragPath)
         {
+            GL.GetInteger(GetPName.MaxVertexAttribs, out int nrAttributes);
+            Debug.WriteLine("Maximum number of vertex attributes supported: " + nrAttributes);
+
             // Существует несколько различных типов шейдеров, но для базового рендеринга вам нужны только два — вершинный и фрагментный шейдеры.
             // Вершинный шейдер отвечает за перемещение по вершинам и загрузку этих данных во фрагментный шейдер.
             // Здесь вершинный шейдер не будет слишком важен, но позже он станет более важным.
