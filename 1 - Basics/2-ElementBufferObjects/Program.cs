@@ -18,7 +18,7 @@ namespace _2_ElementBufferObjects
                 Flags = ContextFlags.ForwardCompatible,
                 Profile = ContextProfile.Core
             };
-
+            
             using (Window game = new Window(nativeWindowSettings))
             {
                 game.Run();
