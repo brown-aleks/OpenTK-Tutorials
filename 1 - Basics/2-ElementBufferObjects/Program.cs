@@ -13,7 +13,7 @@ namespace _2_ElementBufferObjects
             {
                 Size = new Vector2i(800, 600),
                 Location = new Vector2i(100, 100),
-                Title = "CreatingWindow",
+                Title = "Element Buffer Objects",
                 APIVersion = new Version(4, 6),
                 Flags = ContextFlags.ForwardCompatible,
                 Profile = ContextProfile.Core
