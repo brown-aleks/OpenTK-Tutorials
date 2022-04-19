@@ -2,9 +2,10 @@
 using OpenTK.Mathematics;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
-namespace _2_ElementBufferObjects
+namespace _4_Shaders
 {
     // Простой класс, предназначенный для помощи в создании шейдеров.
     // https://github.com/opentk/LearnOpenTK/blob/master/Common/Shader.cs
