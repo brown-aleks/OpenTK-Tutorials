@@ -13,7 +13,7 @@ namespace _3_MoreObjects
             {
                 Size = new Vector2i(800, 600),
                 Location = new Vector2i(100, 100),
-                Title = "Element Buffer Objects",
+                Title = "MoreObjects",
                 APIVersion = new Version(4, 6),
                 Flags = ContextFlags.ForwardCompatible,
                 Profile = ContextProfile.Core
