@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-MoreObjects", "3-MoreObje
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-Shaders-MoreAttributes(OpenGL 4.3)", "4-Shaders-MoreAttributes(OpenGL 4.3)\4-Shaders-MoreAttributes(OpenGL 4.3).csproj", "{B5E1DF03-E3EF-4BD6-B0C4-C52FE1068981}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-Shaders-MoreAttributesInterface", "4-Shaders-MoreAttributesInterface\4-Shaders-MoreAttributesInterface.csproj", "{4714AE4B-8F7A-4F43-9052-B38A720994A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,26 @@ Global
 		{B5E1DF03-E3EF-4BD6-B0C4-C52FE1068981}.Release|x64.Build.0 = Release|Any CPU
 		{B5E1DF03-E3EF-4BD6-B0C4-C52FE1068981}.Release|x86.ActiveCfg = Release|Any CPU
 		{B5E1DF03-E3EF-4BD6-B0C4-C52FE1068981}.Release|x86.Build.0 = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|ARM.Build.0 = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|x64.Build.0 = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Debug|x86.Build.0 = Debug|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|ARM.ActiveCfg = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|ARM.Build.0 = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|ARM64.Build.0 = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|x64.ActiveCfg = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|x64.Build.0 = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|x86.ActiveCfg = Release|Any CPU
+		{4714AE4B-8F7A-4F43-9052-B38A720994A9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
