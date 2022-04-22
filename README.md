@@ -21,9 +21,11 @@ OpenTK tutorials
 
 * [LearnOpenTK](https://opentk.net/learn/index.html)
 * [learnOpenGL](https://learnopengl.com/)
+* [OPENGL 4. ЯЗЫК ШЕЙДЕРОВ. КНИГА РЕЦЕПТОВ](https://dmkpress.com/catalog/computer/programming/978-5-97060-255-3/)
 
 
 [LearnOpenTK]: https://opentk.net/learn/index.html
 [Discord]: https://discord.gg/6HqD48s
 [learnOpenGL]: https://learnopengl.com/
+[OPENGL 4. ЯЗЫК ШЕЙДЕРОВ. КНИГА РЕЦЕПТОВ]: https://dmkpress.com/catalog/computer/programming/978-5-97060-255-3/
 
