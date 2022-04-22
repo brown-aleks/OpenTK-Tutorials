@@ -59,6 +59,7 @@ namespace _3_MoreObjects
 
             GL.BindVertexArray(VAO[0]);
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+            GL.EnableVertexAttribArray(0);
 
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, EBO[0]);
             GL.BufferData(BufferTarget.ElementArrayBuffer, _index.Length * sizeof(int), _index, BufferUsageHint.StaticDraw);
@@ -68,11 +69,11 @@ namespace _3_MoreObjects
 
             GL.BindVertexArray(VAO[1]);
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+            GL.EnableVertexAttribArray(0);
 
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, EBO[1]);
             GL.BufferData(BufferTarget.ElementArrayBuffer, _index.Length * sizeof(int), _index, BufferUsageHint.StaticDraw);
 
-            GL.EnableVertexAttribArray(0);
 
             _shader_Orange = new Shader("Shaders/shader.vert", "Shaders/OrangeShader.frag");
             _shader_Green = new Shader("Shaders/shader.vert", "Shaders/GreenShader.frag");
@@ -87,12 +88,10 @@ namespace _3_MoreObjects
             GL.Clear(ClearBufferMask.ColorBufferBit);
 
             _shader_Orange.Use();
-            GL.EnableVertexAttribArray(0);
             GL.BindVertexArray(VAO[0]);    //  первый ромб
             GL.DrawElements(PrimitiveType.Triangles, _index.Length, DrawElementsType.UnsignedInt, 0);
 
             _shader_Green.Use();
-            GL.EnableVertexAttribArray(0);
             GL.BindVertexArray(VAO[1]);   //  второй ромб
             GL.DrawElements(PrimitiveType.Triangles, _index.Length, DrawElementsType.UnsignedInt, 0);
 
