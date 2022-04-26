@@ -33,7 +33,7 @@ namespace WindowAndVersion
             return windowIcon;
         }
 
-       static void Main(string[] args)
+				static void Main(string[] args)
         {
             NativeWindowSettings nativeWindowSettings = new NativeWindowSettings()
             {
@@ -99,8 +99,7 @@ namespace WindowAndVersion
 
                 // Получает или устанавливает текущий OpenTK.Windowing.Common.Input.WindowIcon для этого окна.
                 // Это ничего не делает в macOS; на этой платформе значок определяется пакетом приложений.
-                //Icon = CreateWindowIcon("helmet.png"),
-                Icon = CreateWindowIcon("helmet.ico"),
+                Icon = CreateWindowIcon("helmet.ico")
             };
 
             using (Window game = new Window(nativeWindowSettings))
