@@ -3,11 +3,9 @@ using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Common.Input;
 using OpenTK.Windowing.Desktop;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
-using Image = SixLabors.ImageSharp.Image;
 using System;
-using System.Runtime.InteropServices;
+using System.Drawing;
+using System.Collections.Generic;
 
 namespace WindowAndVersion
 {
@@ -15,15 +13,27 @@ namespace WindowAndVersion
     {
         public static WindowIcon CreateWindowIcon(string path)
         {
-            var image = (Image<Rgba32>)Image.Load(Configuration.Default, path);
-            image.TryGetSinglePixelSpan(out var imageSpan);
-            var imageBytes = MemoryMarshal.AsBytes(imageSpan).ToArray();
-            var windowIcon = new WindowIcon(new OpenTK.Windowing.Common.Input.Image(image.Width, image.Height, imageBytes));
+            var image = new Bitmap(path);
+            List<byte> data = new();
+            for (int y = 0; y < image.Height; y++)
+            {
+                for (int x = 0; x < image.Width; x++)
+                {
+                    data.AddRange(new byte[]
+                    {
+                        image.GetPixel(x,y).R,
+                        image.GetPixel(x,y).G,
+                        image.GetPixel(x,y).B,
+                        image.GetPixel(x,y).A
+                    });
+                }
+            }
+            var windowIcon = new WindowIcon(new OpenTK.Windowing.Common.Input.Image(image.Width, image.Height, data.ToArray()));
 
             return windowIcon;
         }
 
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
             NativeWindowSettings nativeWindowSettings = new NativeWindowSettings()
             {
@@ -89,7 +99,8 @@ namespace WindowAndVersion
 
                 // Получает или устанавливает текущий OpenTK.Windowing.Common.Input.WindowIcon для этого окна.
                 // Это ничего не делает в macOS; на этой платформе значок определяется пакетом приложений.
-                Icon = CreateWindowIcon("helmet.png"),
+                //Icon = CreateWindowIcon("helmet.png"),
+                Icon = CreateWindowIcon("helmet.ico"),
             };
 
             using (Window game = new Window(nativeWindowSettings))
