@@ -12,7 +12,6 @@ namespace _5_Textures
 
         public static Texture LoadFromFile(string path)
         {
-            //GL.LoadBindings(Bindin);
             // Генерируем дескриптор
             int handle = GL.GenTexture();
 
@@ -100,6 +99,10 @@ namespace _5_Textures
         // Можно связать несколько текстур, если вашему шейдеру требуется больше одной.
         // Если вы хотите это сделать, используйте GL.ActiveTexture, чтобы указать, к какому слоту привязывается GL.BindTexture.
         // Стандарт OpenGL требует, чтобы их было как минимум 16, но их может быть больше в зависимости от вашей видеокарты.
+        /// <summary>
+        /// Привязывает данную текстуру к текстурному слоту. По умолчанию вновь загруженная тектура привязывается к слоту TextureUnit.Texture0
+        /// </summary>
+        /// <param name="unit"> Слот к которому привязывается текстура </param>
         public void Use(TextureUnit unit)
         {
             GL.ActiveTexture(unit);
