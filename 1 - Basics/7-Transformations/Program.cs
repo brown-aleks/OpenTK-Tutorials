@@ -13,7 +13,7 @@ namespace _7_Transformations
             {
                 Size = new Vector2i(800, 600),
                 Location = new Vector2i(100, 100),
-                Title = "MultipleTextures",
+                Title = "Transformations",
                 APIVersion = new Version(4, 6),
                 Flags = ContextFlags.ForwardCompatible,
                 Profile = ContextProfile.Core
